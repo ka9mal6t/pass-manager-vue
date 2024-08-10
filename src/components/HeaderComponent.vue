@@ -1,15 +1,15 @@
 <template>
   <header>
-    <RouterLink className="header-link" to="/home">
+    <RouterLink className="header-link" to="/">
       <img className="header-logo" :src="logo"/>
     </RouterLink>
       <nav>
         <ul className="header-list">
-          <li className="header-item"><RouterLink to="/">Profile</RouterLink></li>
-          <li className="header-item"><RouterLink to="/">Search</RouterLink></li>
-          <li className="header-item"><RouterLink to="/">Interesting</RouterLink></li>
-          <li className="header-item"><RouterLink to="/">Create</RouterLink></li>
-          <li className="header-item"><RouterLink to="/login">Log In</RouterLink></li>
+          <li className="header-item"><RouterLink to="/profile">Profile</RouterLink></li>
+          <li className="header-item"><RouterLink to="/search">Search</RouterLink></li>
+          <li className="header-item"><RouterLink to="/interesting">Interesting</RouterLink></li>
+          <li className="header-item"><RouterLink to="/create">Create</RouterLink></li>
+          <!-- <li className="header-item"><RouterLink to="/login">Log In</RouterLink></li> -->
         </ul>
       </nav>
     </header>
@@ -56,7 +56,7 @@ nav{
 
 .header-item{
   font-size: 1.5em;
-  padding-right: 20px;
+  padding: 10px 20px;
 }
 
 a{
